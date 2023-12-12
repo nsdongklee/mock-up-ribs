@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC369EC22B28191E00A04A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369EC12B28191E00A04A56 /* AppDelegate.swift */; };
+		BC369EC62B28191E00A04A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369EC52B28191E00A04A56 /* ViewController.swift */; };
+		BC369ECB2B28192000A04A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC369ECA2B28192000A04A56 /* Assets.xcassets */; };
+		BC369ECE2B28192000A04A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC369ECC2B28192000A04A56 /* LaunchScreen.storyboard */; };
+		BC369ED72B2819A700A04A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369EC52B28191E00A04A56 /* ViewController.swift */; };
+		BC369ED82B2819A700A04A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369EC12B28191E00A04A56 /* AppDelegate.swift */; };
+		BC369EDC2B2819A700A04A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC369ECC2B28192000A04A56 /* LaunchScreen.storyboard */; };
+		BC369EDD2B2819A700A04A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC369ECA2B28192000A04A56 /* Assets.xcassets */; };
+		BC369EE72B281BFF00A04A56 /* MockupKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC369EE62B281BFF00A04A56 /* MockupKit */; };
+		BC369EE92B281C0400A04A56 /* MockupKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC369EE82B281C0400A04A56 /* MockupKit */; };
+		BC369EF22B281C6800A04A56 /* Utils+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369EF12B281C6800A04A56 /* Utils+Additions.swift */; };
+		BC369EF32B281C6800A04A56 /* Utils+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369EF12B281C6800A04A56 /* Utils+Additions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC369EBE2B28191E00A04A56 /* mock-up-ribs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mock-up-ribs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC369EC12B28191E00A04A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC369EC52B28191E00A04A56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC369ECA2B28192000A04A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC369ECD2B28192000A04A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC369ECF2B28192000A04A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC369EE22B2819A700A04A56 /* mock-up-ribs-stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mock-up-ribs-stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC369EE32B2819A700A04A56 /* Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Stage-Info.plist"; path = "/Users/dongkyulee/dongklee/MyGithub/FACTORY/mock-up-ribs/mock-up-ribs/Stage-Info.plist"; sourceTree = "<absolute>"; };
+		BC369EE42B281A6500A04A56 /* MockupKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MockupKit; path = ../MockupKit; sourceTree = "<group>"; };
+		BC369EF12B281C6800A04A56 /* Utils+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+Additions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC369EBB2B28191E00A04A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC369EE72B281BFF00A04A56 /* MockupKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC369EDA2B2819A700A04A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC369EE92B281C0400A04A56 /* MockupKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC369EB52B28191E00A04A56 = {
+			isa = PBXGroup;
+			children = (
+				BC369EE42B281A6500A04A56 /* MockupKit */,
+				BC369EC02B28191E00A04A56 /* mock-up-ribs */,
+				BC369EBF2B28191E00A04A56 /* Products */,
+				BC369EE52B281BFF00A04A56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC369EBF2B28191E00A04A56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC369EBE2B28191E00A04A56 /* mock-up-ribs.app */,
+				BC369EE22B2819A700A04A56 /* mock-up-ribs-stage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC369EC02B28191E00A04A56 /* mock-up-ribs */ = {
+			isa = PBXGroup;
+			children = (
+				BC369EEC2B281C3200A04A56 /* Utils */,
+				BC369EEB2B281C2900A04A56 /* Resources */,
+				BC369EEA2B281C2000A04A56 /* Intro */,
+				BC369EED2B281C4300A04A56 /* Sources */,
+			);
+			path = "mock-up-ribs";
+			sourceTree = "<group>";
+		};
+		BC369EE52B281BFF00A04A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC369EEA2B281C2000A04A56 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				BC369EC12B28191E00A04A56 /* AppDelegate.swift */,
+				BC369ECC2B28192000A04A56 /* LaunchScreen.storyboard */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		BC369EEB2B281C2900A04A56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC369ECA2B28192000A04A56 /* Assets.xcassets */,
+				BC369ECF2B28192000A04A56 /* Info.plist */,
+				BC369EE32B2819A700A04A56 /* Stage-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC369EEC2B281C3200A04A56 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC369EF12B281C6800A04A56 /* Utils+Additions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC369EED2B281C4300A04A56 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BC369EC52B28191E00A04A56 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC369EBD2B28191E00A04A56 /* mock-up-ribs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC369ED22B28192000A04A56 /* Build configuration list for PBXNativeTarget "mock-up-ribs" */;
+			buildPhases = (
+				BC369EBA2B28191E00A04A56 /* Sources */,
+				BC369EBB2B28191E00A04A56 /* Frameworks */,
+				BC369EBC2B28191E00A04A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mock-up-ribs";
+			packageProductDependencies = (
+				BC369EE62B281BFF00A04A56 /* MockupKit */,
+			);
+			productName = "mock-up-ribs";
+			productReference = BC369EBE2B28191E00A04A56 /* mock-up-ribs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC369ED52B2819A700A04A56 /* mock-up-ribs-stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC369EDF2B2819A700A04A56 /* Build configuration list for PBXNativeTarget "mock-up-ribs-stage" */;
+			buildPhases = (
+				BC369ED62B2819A700A04A56 /* Sources */,
+				BC369EDA2B2819A700A04A56 /* Frameworks */,
+				BC369EDB2B2819A700A04A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mock-up-ribs-stage";
+			packageProductDependencies = (
+				BC369EE82B281C0400A04A56 /* MockupKit */,
+			);
+			productName = "mock-up-ribs";
+			productReference = BC369EE22B2819A700A04A56 /* mock-up-ribs-stage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC369EB62B28191E00A04A56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BC369EBD2B28191E00A04A56 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BC369EB92B28191E00A04A56 /* Build configuration list for PBXProject "mock-up-ribs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC369EB52B28191E00A04A56;
+			productRefGroup = BC369EBF2B28191E00A04A56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC369EBD2B28191E00A04A56 /* mock-up-ribs */,
+				BC369ED52B2819A700A04A56 /* mock-up-ribs-stage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC369EBC2B28191E00A04A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC369ECE2B28192000A04A56 /* LaunchScreen.storyboard in Resources */,
+				BC369ECB2B28192000A04A56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC369EDB2B2819A700A04A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC369EDC2B2819A700A04A56 /* LaunchScreen.storyboard in Resources */,
+				BC369EDD2B2819A700A04A56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC369EBA2B28191E00A04A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC369EC62B28191E00A04A56 /* ViewController.swift in Sources */,
+				BC369EC22B28191E00A04A56 /* AppDelegate.swift in Sources */,
+				BC369EF22B281C6800A04A56 /* Utils+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC369ED62B2819A700A04A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC369ED72B2819A700A04A56 /* ViewController.swift in Sources */,
+				BC369ED82B2819A700A04A56 /* AppDelegate.swift in Sources */,
+				BC369EF32B281C6800A04A56 /* Utils+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC369ECC2B28192000A04A56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC369ECD2B28192000A04A56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC369ED02B28192000A04A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC369ED12B28192000A04A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC369ED32B28192000A04A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mock-up-ribs/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsdongklee.mock-up-ribs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC369ED42B28192000A04A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mock-up-ribs/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsdongklee.mock-up-ribs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC369EE02B2819A700A04A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mock-up-ribs copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsdongklee.mock-up-ribs-stage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC369EE12B2819A700A04A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mock-up-ribs copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsdongklee.mock-up-ribs-stage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC369EB92B28191E00A04A56 /* Build configuration list for PBXProject "mock-up-ribs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC369ED02B28192000A04A56 /* Debug */,
+				BC369ED12B28192000A04A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC369ED22B28192000A04A56 /* Build configuration list for PBXNativeTarget "mock-up-ribs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC369ED32B28192000A04A56 /* Debug */,
+				BC369ED42B28192000A04A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC369EDF2B2819A700A04A56 /* Build configuration list for PBXNativeTarget "mock-up-ribs-stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC369EE02B2819A700A04A56 /* Debug */,
+				BC369EE12B2819A700A04A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC369EE62B281BFF00A04A56 /* MockupKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MockupKit;
+		};
+		BC369EE82B281C0400A04A56 /* MockupKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MockupKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BC369EB62B28191E00A04A56 /* Project object */;
+}
