@@ -9,7 +9,6 @@ import RIBs
 import RxSwift
 
 protocol FollowerListRouting: ViewableRouting {
-    // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
 }
 
 protocol FollowerListPresentable: Presentable {
@@ -20,16 +19,21 @@ protocol FollowerListPresentable: Presentable {
 
 protocol FollowerListListener: AnyObject {
     func followerListDidTapBack()
+    func followerListDidTapCell(id: Int?)
 }
 
 final class FollowerListInteractor: PresentableInteractor<FollowerListPresentable>, FollowerListInteractable, FollowerListPresentableListener {
+    
+    func didTapCell(id: Int?) {
+        listener?.followerListDidTapCell(id: id)
+    }
     
     func didTapBackButton() {
         listener?.followerListDidTapBack()
     }
     
     private func initialize() {
-        
+        presenter.viewModel.followers()
     }
 
     weak var router: FollowerListRouting?
@@ -44,7 +48,8 @@ final class FollowerListInteractor: PresentableInteractor<FollowerListPresentabl
 
     override func didBecomeActive() {
         super.didBecomeActive()
-        // TODO: Implement business logic here.
+        
+        initialize()
     }
 
     override func willResignActive() {

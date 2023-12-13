@@ -50,9 +50,9 @@ final class FollowerRouter: Router<FollowerInteractable>, FollowerRouting {
         self.followerListRouting = nil
     }
     
-    func attachFollowerDetail() {
+    func attachFollowerDetail(_ userInfo: UserModel) {
         if followerDetailRouting != nil { return }
-        let router = followerDetailBuildable.build(withListener: interactor)
+        let router = followerDetailBuildable.build(withListener: interactor, userInfo: userInfo)
         
         if navigationControllable != nil {
             navigationControllable?.pushViewController(router.viewControllable, animated: true)

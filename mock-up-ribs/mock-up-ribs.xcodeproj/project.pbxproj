@@ -73,6 +73,12 @@
 		BC44B1532B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1512B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift */; };
 		BC44B1562B2957C700A87EF1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1552B2957C700A87EF1 /* UserViewModel.swift */; };
 		BC44B1572B2957C700A87EF1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1552B2957C700A87EF1 /* UserViewModel.swift */; };
+		BC44B15B2B296A6A00A87EF1 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B15A2B296A6A00A87EF1 /* FollowerCell.swift */; };
+		BC44B15C2B296A6A00A87EF1 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B15A2B296A6A00A87EF1 /* FollowerCell.swift */; };
+		BC44B15E2B296BD900A87EF1 /* AssetsProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B15D2B296BD900A87EF1 /* AssetsProxy.swift */; };
+		BC44B15F2B296BD900A87EF1 /* AssetsProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B15D2B296BD900A87EF1 /* AssetsProxy.swift */; };
+		BC44B1632B29804C00A87EF1 /* UserDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1622B29804C00A87EF1 /* UserDetailCell.swift */; };
+		BC44B1642B29804C00A87EF1 /* UserDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1622B29804C00A87EF1 /* UserDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +118,9 @@
 		BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerDetailInteractor.swift; sourceTree = "<group>"; };
 		BC44B1512B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePresentationControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		BC44B1552B2957C700A87EF1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		BC44B15A2B296A6A00A87EF1 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		BC44B15D2B296BD900A87EF1 /* AssetsProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsProxy.swift; sourceTree = "<group>"; };
+		BC44B1622B29804C00A87EF1 /* UserDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +197,7 @@
 				BC369ECA2B28192000A04A56 /* Assets.xcassets */,
 				BC369ECF2B28192000A04A56 /* Info.plist */,
 				BC3EFCD92B28387B0027510A /* Stage-Info.plist */,
+				BC44B15D2B296BD900A87EF1 /* AssetsProxy.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -317,10 +327,8 @@
 		BC44B1372B294E8400A87EF1 /* FollowerList */ = {
 			isa = PBXGroup;
 			children = (
-				BC44B1392B294FB500A87EF1 /* FollowerListRouter.swift */,
-				BC44B13A2B294FB500A87EF1 /* FollowerListViewController.swift */,
-				BC44B13B2B294FB500A87EF1 /* FollowerListBuilder.swift */,
-				BC44B13C2B294FB500A87EF1 /* FollowerListInteractor.swift */,
+				BC44B1592B296A4600A87EF1 /* Riblet */,
+				BC44B1582B296A3F00A87EF1 /* Subviews */,
 			);
 			path = FollowerList;
 			sourceTree = "<group>";
@@ -328,10 +336,8 @@
 		BC44B1382B294E9100A87EF1 /* FollowDetail */ = {
 			isa = PBXGroup;
 			children = (
-				BC44B1452B294FC300A87EF1 /* FollowerDetailRouter.swift */,
-				BC44B1462B294FC300A87EF1 /* FollowerDetailViewController.swift */,
-				BC44B1472B294FC300A87EF1 /* FollowerDetailBuilder.swift */,
-				BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */,
+				BC44B1612B29803800A87EF1 /* Subviews */,
+				BC44B1602B29802C00A87EF1 /* Riblet */,
 			);
 			path = FollowDetail;
 			sourceTree = "<group>";
@@ -342,6 +348,44 @@
 				BC44B1552B2957C700A87EF1 /* UserViewModel.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BC44B1582B296A3F00A87EF1 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B15A2B296A6A00A87EF1 /* FollowerCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		BC44B1592B296A4600A87EF1 /* Riblet */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1392B294FB500A87EF1 /* FollowerListRouter.swift */,
+				BC44B13A2B294FB500A87EF1 /* FollowerListViewController.swift */,
+				BC44B13B2B294FB500A87EF1 /* FollowerListBuilder.swift */,
+				BC44B13C2B294FB500A87EF1 /* FollowerListInteractor.swift */,
+			);
+			path = Riblet;
+			sourceTree = "<group>";
+		};
+		BC44B1602B29802C00A87EF1 /* Riblet */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1452B294FC300A87EF1 /* FollowerDetailRouter.swift */,
+				BC44B1462B294FC300A87EF1 /* FollowerDetailViewController.swift */,
+				BC44B1472B294FC300A87EF1 /* FollowerDetailBuilder.swift */,
+				BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */,
+			);
+			path = Riblet;
+			sourceTree = "<group>";
+		};
+		BC44B1612B29803800A87EF1 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1622B29804C00A87EF1 /* UserDetailCell.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3EFCBD2B282DC50027510A /* AppComponent.swift in Sources */,
+				BC44B1632B29804C00A87EF1 /* UserDetailCell.swift in Sources */,
 				BC44B1562B2957C700A87EF1 /* UserViewModel.swift in Sources */,
 				BC44B12E2B2948D300A87EF1 /* FollowerBuilder.swift in Sources */,
 				BC369EC22B28191E00A04A56 /* AppDelegate.swift in Sources */,
@@ -458,6 +503,7 @@
 				BC44B1412B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */,
 				BC44B14D2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */,
 				BC3EFCD72B2832870027510A /* HomeInteractor.swift in Sources */,
+				BC44B15E2B296BD900A87EF1 /* AssetsProxy.swift in Sources */,
 				BC3EFCD52B2832870027510A /* HomeBuilder.swift in Sources */,
 				BC369EF22B281C6800A04A56 /* Utils+Additions.swift in Sources */,
 				BC44B1302B2948D300A87EF1 /* FollowerInteractor.swift in Sources */,
@@ -466,6 +512,7 @@
 				BC44B1492B294FC300A87EF1 /* FollowerDetailRouter.swift in Sources */,
 				BC44B13D2B294FB500A87EF1 /* FollowerListRouter.swift in Sources */,
 				BC3EFCE52B283DF50027510A /* UserModel.swift in Sources */,
+				BC44B15B2B296A6A00A87EF1 /* FollowerCell.swift in Sources */,
 				BC3EFCD32B2832870027510A /* HomeViewController.swift in Sources */,
 				BC44B12C2B2948D300A87EF1 /* FollowerRouter.swift in Sources */,
 				BC3EFCC92B282DE30027510A /* RootInteractor.swift in Sources */,
@@ -486,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3EFCBE2B282DC50027510A /* AppComponent.swift in Sources */,
+				BC44B1642B29804C00A87EF1 /* UserDetailCell.swift in Sources */,
 				BC44B1572B2957C700A87EF1 /* UserViewModel.swift in Sources */,
 				BC44B12F2B2948D300A87EF1 /* FollowerBuilder.swift in Sources */,
 				BC369ED82B2819A700A04A56 /* AppDelegate.swift in Sources */,
@@ -494,6 +542,7 @@
 				BC44B1422B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */,
 				BC44B14E2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */,
 				BC3EFCD82B2832870027510A /* HomeInteractor.swift in Sources */,
+				BC44B15F2B296BD900A87EF1 /* AssetsProxy.swift in Sources */,
 				BC3EFCD62B2832870027510A /* HomeBuilder.swift in Sources */,
 				BC369EF32B281C6800A04A56 /* Utils+Additions.swift in Sources */,
 				BC44B1312B2948D300A87EF1 /* FollowerInteractor.swift in Sources */,
@@ -502,6 +551,7 @@
 				BC44B14A2B294FC300A87EF1 /* FollowerDetailRouter.swift in Sources */,
 				BC44B13E2B294FB500A87EF1 /* FollowerListRouter.swift in Sources */,
 				BC3EFCE62B283DF50027510A /* UserModel.swift in Sources */,
+				BC44B15C2B296A6A00A87EF1 /* FollowerCell.swift in Sources */,
 				BC3EFCD42B2832870027510A /* HomeViewController.swift in Sources */,
 				BC44B12D2B2948D300A87EF1 /* FollowerRouter.swift in Sources */,
 				BC3EFCCA2B282DE30027510A /* RootInteractor.swift in Sources */,

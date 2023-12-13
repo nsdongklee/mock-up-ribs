@@ -18,7 +18,42 @@ public final class Jarvis {
 
 
 //MARK: - 전역으로 사용할 헬퍼 메소드 구현
-extension Jarvis { }
+extension Jarvis {
+    public func addSpliter(containerHeight: CGFloat = CGFloat(3.5), lineHeight: CGFloat = CGFloat(0.8), offset: CGFloat? = nil) -> UIView {
+        let containerView: UIView = {
+            let v = UIView()
+            v.backgroundColor = .white
+            return v
+        }()
+        
+        let lineView: UIView = {
+            let v = UIView()
+            v.backgroundColor = .systemGray4
+            return v
+        }()
+        
+        containerView.addSubview(lineView)
+        containerView.snp.makeConstraints { make in
+            make.height.equalTo(containerHeight)
+        }
+        
+        if let offset = offset {
+            lineView.snp.makeConstraints { make in
+                make.centerY.equalToSuperview()
+                make.left.equalToSuperview().offset(offset)
+                make.right.equalToSuperview().offset(-offset)
+                make.height.equalTo(lineHeight)
+            }
+        } else {
+            lineView.snp.makeConstraints { make in
+                make.width.centerY.equalToSuperview()
+                make.height.equalTo(lineHeight)
+            }
+        }
+        
+        return containerView
+    }
+}
 
 
 //MARK: - 유틸리티
@@ -89,5 +124,20 @@ extension UIViewController {
             target: target,
             action: action
         )
+    }
+}
+
+/// arrangedSubviews 전체 삭제
+extension UIStackView {
+    @discardableResult
+    func removeAllArrangedSubviews() -> [UIView] {
+        return arrangedSubviews.reduce([UIView]()) { $0 + [removeArrangedSubViewProperly($1)] }
+    }
+
+    func removeArrangedSubViewProperly(_ view: UIView) -> UIView {
+        removeArrangedSubview(view)
+        NSLayoutConstraint.deactivate(view.constraints)
+        view.removeFromSuperview()
+        return view
     }
 }

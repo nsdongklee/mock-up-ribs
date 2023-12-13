@@ -13,7 +13,7 @@ protocol FollowerRouting: Routing {
     
     func attachFollowerList()
     func detachFollowerList()
-    func attachFollowerDetail()
+    func attachFollowerDetail(_ userInfo: UserModel)
     func detachFollowerDetail()
 }
 
@@ -22,6 +22,20 @@ protocol FollowerListener: AnyObject {
 }
 
 final class FollowerInteractor: Interactor, FollowerInteractable, AdaptivePresentationControllerDelegate {
+    
+    func detailDidTapBack() {
+        router?.detachFollowerDetail()
+    }
+    
+    func followerListDidTapCell(id: Int?) {
+        guard let id = id else { return }
+        
+        UserViewModel().user(id: id, completion: { [weak self] userInfo in
+            if let userInfo = userInfo {
+                self?.router?.attachFollowerDetail(userInfo)
+            }
+        })
+    }
     
     func followerListDidTapBack() {
         router?.detachFollowerList()

@@ -20,7 +20,7 @@ final class FollowerDetailComponent: Component<FollowerDetailDependency> {
 // MARK: - Builder
 
 protocol FollowerDetailBuildable: Buildable {
-    func build(withListener listener: FollowerDetailListener) -> FollowerDetailRouting
+    func build(withListener listener: FollowerDetailListener, userInfo: UserModel) -> FollowerDetailRouting
 }
 
 final class FollowerDetailBuilder: Builder<FollowerDetailDependency>, FollowerDetailBuildable {
@@ -29,9 +29,9 @@ final class FollowerDetailBuilder: Builder<FollowerDetailDependency>, FollowerDe
         super.init(dependency: dependency)
     }
 
-    func build(withListener listener: FollowerDetailListener) -> FollowerDetailRouting {
+    func build(withListener listener: FollowerDetailListener, userInfo: UserModel) -> FollowerDetailRouting {
         let component = FollowerDetailComponent(dependency: dependency)
-        let viewController = FollowerDetailViewController()
+        let viewController = FollowerDetailViewController(dismissButtonType: .back, userInfo: userInfo)
         let interactor = FollowerDetailInteractor(presenter: viewController)
         interactor.listener = listener
         return FollowerDetailRouter(interactor: interactor, viewController: viewController)

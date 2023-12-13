@@ -18,11 +18,15 @@ protocol FollowerDetailPresentable: Presentable {
 }
 
 protocol FollowerDetailListener: AnyObject {
-    // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+    func detailDidTapBack()
 }
 
 final class FollowerDetailInteractor: PresentableInteractor<FollowerDetailPresentable>, FollowerDetailInteractable, FollowerDetailPresentableListener {
-
+    
+    func didTapBackButton() {
+        listener?.detailDidTapBack()
+    }
+    
     weak var router: FollowerDetailRouting?
     weak var listener: FollowerDetailListener?
 
