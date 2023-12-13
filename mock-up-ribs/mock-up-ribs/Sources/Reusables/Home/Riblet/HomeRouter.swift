@@ -7,7 +7,10 @@
 
 import RIBs
 
-protocol HomeInteractable: Interactable {
+protocol HomeInteractable:
+    Interactable,
+    FollowerListener
+{
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
@@ -17,9 +20,31 @@ protocol HomeViewControllable: ViewControllable {
 }
 
 final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable>, HomeRouting {
+    
+    func attachFollowers() {
+        if followerRouting != nil { return }
+        let router = followerBuildable.build(withListener: interactor)
+        attachChild(router)
+        self.followerRouting = router
+    }
+    
+    func detachFollowers() {
+        guard let router = followerRouting else { return }
+        detachChild(router)
+        self.followerRouting = nil
+    }
 
+    
+    private let followerBuildable: FollowerBuildable
+    private var followerRouting: FollowerRouting?
+    
     // TODO: Constructor inject child builder protocols to allow building children.
-    override init(interactor: HomeInteractable, viewController: HomeViewControllable) {
+    init(
+        interactor: HomeInteractable,
+        viewController: HomeViewControllable,
+        followerBuildable: FollowerBuildable
+    ) {
+        self.followerBuildable = followerBuildable
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }

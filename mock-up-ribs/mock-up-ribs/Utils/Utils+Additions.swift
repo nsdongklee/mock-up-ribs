@@ -77,3 +77,17 @@ extension UITabBar {
         UITabBar.appearance().backgroundColor = UIColor.white
     }
 }
+
+extension UIViewController {
+    /// leftBarButtonItem 세팅해주는 유틸리티
+    func setupNavigationItem(with buttonType: DismissButtonType, target: Any?, action: Selector?) {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(
+                systemName: buttonType.systemIconName,
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 18, weight: .regular))?.withTintColor(.black, renderingMode: .alwaysOriginal),
+            style: .plain,
+            target: target,
+            action: action
+        )
+    }
+}

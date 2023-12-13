@@ -45,6 +45,34 @@
 		BC3EFCE62B283DF50027510A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3EFCE42B283DF50027510A /* UserModel.swift */; };
 		BC3EFCE92B283E500027510A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3EFCE82B283E500027510A /* NetworkManager.swift */; };
 		BC3EFCEA2B283E500027510A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3EFCE82B283E500027510A /* NetworkManager.swift */; };
+		BC44B12C2B2948D300A87EF1 /* FollowerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1292B2948D300A87EF1 /* FollowerRouter.swift */; };
+		BC44B12D2B2948D300A87EF1 /* FollowerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1292B2948D300A87EF1 /* FollowerRouter.swift */; };
+		BC44B12E2B2948D300A87EF1 /* FollowerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B12A2B2948D300A87EF1 /* FollowerBuilder.swift */; };
+		BC44B12F2B2948D300A87EF1 /* FollowerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B12A2B2948D300A87EF1 /* FollowerBuilder.swift */; };
+		BC44B1302B2948D300A87EF1 /* FollowerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B12B2B2948D300A87EF1 /* FollowerInteractor.swift */; };
+		BC44B1312B2948D300A87EF1 /* FollowerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B12B2B2948D300A87EF1 /* FollowerInteractor.swift */; };
+		BC44B1342B2949D200A87EF1 /* LoginGlobalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1332B2949D200A87EF1 /* LoginGlobalRepository.swift */; };
+		BC44B1352B2949D200A87EF1 /* LoginGlobalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1332B2949D200A87EF1 /* LoginGlobalRepository.swift */; };
+		BC44B13D2B294FB500A87EF1 /* FollowerListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1392B294FB500A87EF1 /* FollowerListRouter.swift */; };
+		BC44B13E2B294FB500A87EF1 /* FollowerListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1392B294FB500A87EF1 /* FollowerListRouter.swift */; };
+		BC44B13F2B294FB500A87EF1 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B13A2B294FB500A87EF1 /* FollowerListViewController.swift */; };
+		BC44B1402B294FB500A87EF1 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B13A2B294FB500A87EF1 /* FollowerListViewController.swift */; };
+		BC44B1412B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B13B2B294FB500A87EF1 /* FollowerListBuilder.swift */; };
+		BC44B1422B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B13B2B294FB500A87EF1 /* FollowerListBuilder.swift */; };
+		BC44B1432B294FB500A87EF1 /* FollowerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B13C2B294FB500A87EF1 /* FollowerListInteractor.swift */; };
+		BC44B1442B294FB500A87EF1 /* FollowerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B13C2B294FB500A87EF1 /* FollowerListInteractor.swift */; };
+		BC44B1492B294FC300A87EF1 /* FollowerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1452B294FC300A87EF1 /* FollowerDetailRouter.swift */; };
+		BC44B14A2B294FC300A87EF1 /* FollowerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1452B294FC300A87EF1 /* FollowerDetailRouter.swift */; };
+		BC44B14B2B294FC300A87EF1 /* FollowerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1462B294FC300A87EF1 /* FollowerDetailViewController.swift */; };
+		BC44B14C2B294FC300A87EF1 /* FollowerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1462B294FC300A87EF1 /* FollowerDetailViewController.swift */; };
+		BC44B14D2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1472B294FC300A87EF1 /* FollowerDetailBuilder.swift */; };
+		BC44B14E2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1472B294FC300A87EF1 /* FollowerDetailBuilder.swift */; };
+		BC44B14F2B294FC300A87EF1 /* FollowerDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */; };
+		BC44B1502B294FC300A87EF1 /* FollowerDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */; };
+		BC44B1522B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1512B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift */; };
+		BC44B1532B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1512B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift */; };
+		BC44B1562B2957C700A87EF1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1552B2957C700A87EF1 /* UserViewModel.swift */; };
+		BC44B1572B2957C700A87EF1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44B1552B2957C700A87EF1 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +98,20 @@
 		BC3EFCE12B283DEF0027510A /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		BC3EFCE42B283DF50027510A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		BC3EFCE82B283E500027510A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BC44B1292B2948D300A87EF1 /* FollowerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerRouter.swift; sourceTree = "<group>"; };
+		BC44B12A2B2948D300A87EF1 /* FollowerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerBuilder.swift; sourceTree = "<group>"; };
+		BC44B12B2B2948D300A87EF1 /* FollowerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerInteractor.swift; sourceTree = "<group>"; };
+		BC44B1332B2949D200A87EF1 /* LoginGlobalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGlobalRepository.swift; sourceTree = "<group>"; };
+		BC44B1392B294FB500A87EF1 /* FollowerListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListRouter.swift; sourceTree = "<group>"; };
+		BC44B13A2B294FB500A87EF1 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
+		BC44B13B2B294FB500A87EF1 /* FollowerListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListBuilder.swift; sourceTree = "<group>"; };
+		BC44B13C2B294FB500A87EF1 /* FollowerListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListInteractor.swift; sourceTree = "<group>"; };
+		BC44B1452B294FC300A87EF1 /* FollowerDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerDetailRouter.swift; sourceTree = "<group>"; };
+		BC44B1462B294FC300A87EF1 /* FollowerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerDetailViewController.swift; sourceTree = "<group>"; };
+		BC44B1472B294FC300A87EF1 /* FollowerDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerDetailBuilder.swift; sourceTree = "<group>"; };
+		BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerDetailInteractor.swift; sourceTree = "<group>"; };
+		BC44B1512B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePresentationControllerDelegateProxy.swift; sourceTree = "<group>"; };
+		BC44B1552B2957C700A87EF1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +197,7 @@
 			children = (
 				BC369EF12B281C6800A04A56 /* Utils+Additions.swift */,
 				BC3EFCB82B282CA80027510A /* RIBs+Utils.swift */,
+				BC44B1512B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -182,8 +225,9 @@
 		BC3EFCCB2B28324A0027510A /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				BC44B1322B2949A700A87EF1 /* Login */,
 				BC3EFCCC2B28325C0027510A /* Home */,
-				BC3EFCDE2B283D950027510A /* UserDetail */,
+				BC3EFCDE2B283D950027510A /* Follower */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -215,11 +259,15 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
-		BC3EFCDE2B283D950027510A /* UserDetail */ = {
+		BC3EFCDE2B283D950027510A /* Follower */ = {
 			isa = PBXGroup;
 			children = (
+				BC44B1542B2957BB00A87EF1 /* Common */,
+				BC44B1382B294E9100A87EF1 /* FollowDetail */,
+				BC44B1372B294E8400A87EF1 /* FollowerList */,
+				BC44B1362B294E7900A87EF1 /* Container */,
 			);
-			path = UserDetail;
+			path = Follower;
 			sourceTree = "<group>";
 		};
 		BC3EFCDF2B283DD60027510A /* Services */ = {
@@ -244,6 +292,54 @@
 			isa = PBXGroup;
 			children = (
 				BC3EFCE82B283E500027510A /* NetworkManager.swift */,
+				BC44B1332B2949D200A87EF1 /* LoginGlobalRepository.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC44B1322B2949A700A87EF1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BC44B1362B294E7900A87EF1 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1292B2948D300A87EF1 /* FollowerRouter.swift */,
+				BC44B12A2B2948D300A87EF1 /* FollowerBuilder.swift */,
+				BC44B12B2B2948D300A87EF1 /* FollowerInteractor.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		BC44B1372B294E8400A87EF1 /* FollowerList */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1392B294FB500A87EF1 /* FollowerListRouter.swift */,
+				BC44B13A2B294FB500A87EF1 /* FollowerListViewController.swift */,
+				BC44B13B2B294FB500A87EF1 /* FollowerListBuilder.swift */,
+				BC44B13C2B294FB500A87EF1 /* FollowerListInteractor.swift */,
+			);
+			path = FollowerList;
+			sourceTree = "<group>";
+		};
+		BC44B1382B294E9100A87EF1 /* FollowDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1452B294FC300A87EF1 /* FollowerDetailRouter.swift */,
+				BC44B1462B294FC300A87EF1 /* FollowerDetailViewController.swift */,
+				BC44B1472B294FC300A87EF1 /* FollowerDetailBuilder.swift */,
+				BC44B1482B294FC300A87EF1 /* FollowerDetailInteractor.swift */,
+			);
+			path = FollowDetail;
+			sourceTree = "<group>";
+		};
+		BC44B1542B2957BB00A87EF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC44B1552B2957C700A87EF1 /* UserViewModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -354,20 +450,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3EFCBD2B282DC50027510A /* AppComponent.swift in Sources */,
+				BC44B1562B2957C700A87EF1 /* UserViewModel.swift in Sources */,
+				BC44B12E2B2948D300A87EF1 /* FollowerBuilder.swift in Sources */,
 				BC369EC22B28191E00A04A56 /* AppDelegate.swift in Sources */,
 				BC3EFCC52B282DE30027510A /* RootTabBarController.swift in Sources */,
 				BC3EFCE22B283DEF0027510A /* UserAPI.swift in Sources */,
+				BC44B1412B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */,
+				BC44B14D2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */,
 				BC3EFCD72B2832870027510A /* HomeInteractor.swift in Sources */,
 				BC3EFCD52B2832870027510A /* HomeBuilder.swift in Sources */,
 				BC369EF22B281C6800A04A56 /* Utils+Additions.swift in Sources */,
+				BC44B1302B2948D300A87EF1 /* FollowerInteractor.swift in Sources */,
+				BC44B14F2B294FC300A87EF1 /* FollowerDetailInteractor.swift in Sources */,
 				BC3EFCC32B282DE30027510A /* RootRouter.swift in Sources */,
+				BC44B1492B294FC300A87EF1 /* FollowerDetailRouter.swift in Sources */,
+				BC44B13D2B294FB500A87EF1 /* FollowerListRouter.swift in Sources */,
 				BC3EFCE52B283DF50027510A /* UserModel.swift in Sources */,
 				BC3EFCD32B2832870027510A /* HomeViewController.swift in Sources */,
+				BC44B12C2B2948D300A87EF1 /* FollowerRouter.swift in Sources */,
 				BC3EFCC92B282DE30027510A /* RootInteractor.swift in Sources */,
+				BC44B1432B294FB500A87EF1 /* FollowerListInteractor.swift in Sources */,
+				BC44B14B2B294FC300A87EF1 /* FollowerDetailViewController.swift in Sources */,
 				BC3EFCB92B282CA80027510A /* RIBs+Utils.swift in Sources */,
 				BC3EFCE92B283E500027510A /* NetworkManager.swift in Sources */,
+				BC44B13F2B294FB500A87EF1 /* FollowerListViewController.swift in Sources */,
 				BC3EFCD12B2832870027510A /* HomeRouter.swift in Sources */,
 				BC3EFCC72B282DE30027510A /* RootBuilder.swift in Sources */,
+				BC44B1342B2949D200A87EF1 /* LoginGlobalRepository.swift in Sources */,
+				BC44B1522B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,20 +486,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3EFCBE2B282DC50027510A /* AppComponent.swift in Sources */,
+				BC44B1572B2957C700A87EF1 /* UserViewModel.swift in Sources */,
+				BC44B12F2B2948D300A87EF1 /* FollowerBuilder.swift in Sources */,
 				BC369ED82B2819A700A04A56 /* AppDelegate.swift in Sources */,
 				BC3EFCC62B282DE30027510A /* RootTabBarController.swift in Sources */,
 				BC3EFCE32B283DEF0027510A /* UserAPI.swift in Sources */,
+				BC44B1422B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */,
+				BC44B14E2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */,
 				BC3EFCD82B2832870027510A /* HomeInteractor.swift in Sources */,
 				BC3EFCD62B2832870027510A /* HomeBuilder.swift in Sources */,
 				BC369EF32B281C6800A04A56 /* Utils+Additions.swift in Sources */,
+				BC44B1312B2948D300A87EF1 /* FollowerInteractor.swift in Sources */,
+				BC44B1502B294FC300A87EF1 /* FollowerDetailInteractor.swift in Sources */,
 				BC3EFCC42B282DE30027510A /* RootRouter.swift in Sources */,
+				BC44B14A2B294FC300A87EF1 /* FollowerDetailRouter.swift in Sources */,
+				BC44B13E2B294FB500A87EF1 /* FollowerListRouter.swift in Sources */,
 				BC3EFCE62B283DF50027510A /* UserModel.swift in Sources */,
 				BC3EFCD42B2832870027510A /* HomeViewController.swift in Sources */,
+				BC44B12D2B2948D300A87EF1 /* FollowerRouter.swift in Sources */,
 				BC3EFCCA2B282DE30027510A /* RootInteractor.swift in Sources */,
+				BC44B1442B294FB500A87EF1 /* FollowerListInteractor.swift in Sources */,
+				BC44B14C2B294FC300A87EF1 /* FollowerDetailViewController.swift in Sources */,
 				BC3EFCBA2B282CA80027510A /* RIBs+Utils.swift in Sources */,
 				BC3EFCEA2B283E500027510A /* NetworkManager.swift in Sources */,
+				BC44B1402B294FB500A87EF1 /* FollowerListViewController.swift in Sources */,
 				BC3EFCD22B2832870027510A /* HomeRouter.swift in Sources */,
 				BC3EFCC82B282DE30027510A /* RootBuilder.swift in Sources */,
+				BC44B1352B2949D200A87EF1 /* LoginGlobalRepository.swift in Sources */,
+				BC44B1532B29511300A87EF1 /* AdaptivePresentationControllerDelegateProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

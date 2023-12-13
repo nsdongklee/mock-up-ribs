@@ -38,9 +38,9 @@ extension MockDomain {
     public var path: String {
         switch self {
     #if STAGE
-        case .default: return "test"
+        case .default: return "https://jsonplaceholder.typicode.com/"
     #else  //REAL
-        case .default: return "test"
+        case .default: return "https://jsonplaceholder.typicode.com/"
     #endif
         }
     }

@@ -7,10 +7,36 @@
 
 import Foundation
 
-/// 유저 정보 리스트 조회 모델
-struct UserListModel: Codable {
+/// 유저 정보 조회 모델
+public struct UserModel: Codable {
+    var id: Int?
+    var name: String?
+    var username: String?
+    var email: String?
+    var phone: String?
+    var website: String?
+    
+    var address: Address?
+    
+    struct Address: Codable {
+        var street: String?
+        var suite: String?
+        var city: String?
+        var zipcode: String?
+        var geo: Geo?
+        
+        struct Geo: Codable {
+            var lat: String?
+            var lng: String?
+        }
+    }
+    
+    var company: Company?
+    
+    struct Company: Codable {
+        var name: String?
+        var catchPhrase: String?
+        var bs: String?
+    }
 }
 
-/// 유저 정보 상세 조회 모델
-struct UserDetailModel: Codable {
-}
