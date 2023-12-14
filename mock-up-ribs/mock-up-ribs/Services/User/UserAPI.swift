@@ -20,6 +20,7 @@ public enum UserAPI {
 }
 
 extension UserAPI: TargetType {
+    
     public var baseURL: URL {
         return URL(string: NetworkManager.shared.domain(.default))!
     }
