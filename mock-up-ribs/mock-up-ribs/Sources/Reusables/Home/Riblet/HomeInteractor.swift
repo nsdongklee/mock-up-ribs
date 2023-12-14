@@ -11,6 +11,8 @@ import RxSwift
 protocol HomeRouting: ViewableRouting {
     func attachFollowers()
     func detachFollowers()
+    func attachLogin()
+    func detachLogin()
 }
 
 protocol HomePresentable: Presentable {
@@ -21,7 +23,19 @@ protocol HomeListener: AnyObject {
 }
 
 final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteractable, HomePresentableListener {
-
+    
+    func loginSuccessfully() {
+        router?.detachLogin()
+    }
+    
+    func loginDidTapBack() {
+        router?.detachLogin()
+    }
+    
+    func didTapLogin() {
+        router?.attachLogin()
+    }
+    
     func followerModalDismiss() {
         router?.detachFollowers()
     }

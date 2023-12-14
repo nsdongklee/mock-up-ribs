@@ -14,7 +14,8 @@ protocol HomeDependency: Dependency {
 
 final class HomeComponent:
     Component<HomeDependency>,
-    FollowerDependency
+    FollowerDependency,
+    LoginDependency
 {
     var FollowerViewController: ViewControllable
     
@@ -43,11 +44,13 @@ final class HomeBuilder: Builder<HomeDependency>, HomeBuildable {
         interactor.listener = listener
         
         let followerBuilder = FollowerBuilder(dependency: component)
+        let loginBuilder = LoginBuilder(dependency: component)
         
         return HomeRouter(
             interactor: interactor,
             viewController: viewController,
-            followerBuildable: followerBuilder
+            followerBuildable: followerBuilder,
+            loginBuildable: loginBuilder
         )
     }
 }

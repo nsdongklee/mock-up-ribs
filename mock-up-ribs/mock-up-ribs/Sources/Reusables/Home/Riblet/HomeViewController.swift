@@ -12,10 +12,13 @@ import SnapKit
 
 protocol HomePresentableListener: AnyObject {
     func didTapFollowers()
+    func didTapLogin()
 }
 
 final class HomeViewController: UIViewController, HomePresentable, HomeViewControllable {
 
+    private let loginableEmptyView = LoginableEmptyView()
+    
     weak var listener: HomePresentableListener?
     
     init() {
@@ -32,7 +35,13 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
         view.backgroundColor = .systemGray6
         setupBarItems()
         
-        addonFollowerButton()
+        view.addSubview(loginableEmptyView)
+        
+        loginableEmptyView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        bind()
     }
     
     private func setupBarItems() {
@@ -72,7 +81,20 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
         }
     }
     
+    private func bind() {
+        loginableEmptyView.delegate = self
+    }
+    
     @objc private func didTapFollowerButton(_ sender: UIButton) {
         listener?.didTapFollowers()
+    }
+}
+
+
+//MARK: - 로그인 시도 델리게이트
+extension HomeViewController: LoginableEmptyViewDelegate {
+    
+    func didTapLogin() {
+        listener?.didTapLogin()
     }
 }

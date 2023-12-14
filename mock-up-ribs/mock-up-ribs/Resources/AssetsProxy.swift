@@ -11,6 +11,7 @@ import UIKit
 public enum AssetsProxy: String {
     case unknown_user = "unknown_user"
     case house = "house"
+    case check_select_green = "check_select_green"
 }
 
 //MARK: - 관련 메소드

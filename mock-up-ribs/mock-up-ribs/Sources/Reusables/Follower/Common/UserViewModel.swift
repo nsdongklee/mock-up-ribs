@@ -31,14 +31,6 @@ class UserViewModel: NSObject {
         }
     }
     
-    public func login(id: Int, completion: @escaping (UserModel?) -> Void) {
-        provider.request(.login(id: id)) { result in
-            NetworkManager.shared.response(result, instance: UserModel.self) { res, err in
-                completion(res)
-            }
-        }
-    }
-    
     public func user(id: Int, completion: @escaping (UserModel?) -> Void) {
         provider.request(.user(id: id)) { result in
             NetworkManager.shared.response(result, instance: UserModel.self) { res, err in

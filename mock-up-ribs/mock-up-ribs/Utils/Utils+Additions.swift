@@ -19,6 +19,16 @@ public final class Jarvis {
 
 //MARK: - 전역으로 사용할 헬퍼 메소드 구현
 extension Jarvis {
+    
+    public func validate(id: String) -> Bool {
+        let num = Int(id) ?? 0
+        return (1 <= num && num <= 10)
+    }
+    
+    public func validate(pw: String) -> Bool {
+        return pw.count >= 5
+    }
+    
     public func addSpliter(containerHeight: CGFloat = CGFloat(3.5), lineHeight: CGFloat = CGFloat(0.8), offset: CGFloat? = nil) -> UIView {
         let containerView: UIView = {
             let v = UIView()
@@ -139,5 +149,20 @@ extension UIStackView {
         NSLayoutConstraint.deactivate(view.constraints)
         view.removeFromSuperview()
         return view
+    }
+}
+
+//MARK: - 버튼 상태에 따라 백그라운드 컬러 변경
+extension UIButton {
+    func setBackgroundColor(_ color: UIColor, for state: UIControl.State) {
+        UIGraphicsBeginImageContext(CGSize(width: 1.0, height: 1.0))
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+        context.setFillColor(color.cgColor)
+        context.fill(CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0))
+        
+        let backgroundImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+         
+        self.setBackgroundImage(backgroundImage, for: state)
     }
 }
