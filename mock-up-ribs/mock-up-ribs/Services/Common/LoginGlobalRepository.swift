@@ -34,4 +34,15 @@ public final class LoginGlobalRepository {
         self.loggedInUserInfo = model
         self.subscribableUserInfo.on(.next(model))
     }
+    
+    
+    //MARK: 로그인 유저의 액션
+    
+    /// 가장 최근 찾아 본 유저
+    private var latestCheckedUser: UserModel? = nil
+    
+    /// 최근 찾아 본 유저 캐싱
+    public func latestChecked(_ userInfo: UserModel?) {
+        self.latestCheckedUser = userInfo
+    }
 }
