@@ -12,6 +12,9 @@ public enum AssetsProxy: String {
     case unknown_user = "unknown_user"
     case house = "house"
     case check_select_green = "check_select_green"
+    case earth_globe = "earth_globe"
+    case printer = "printer"
+    case smartphone = "smartphone"
 }
 
 //MARK: - 관련 메소드

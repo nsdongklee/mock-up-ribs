@@ -126,9 +126,9 @@ enum UserDetailType: CaseIterable {
     var image: UIImage {
         switch self {
         case .addr: return AssetsProxy.house.image()
-        case .company: return AssetsProxy.house.image()
-        case .phone: return AssetsProxy.house.image()
-        case .website: return AssetsProxy.house.image()
+        case .company: return AssetsProxy.printer.image()
+        case .phone: return AssetsProxy.smartphone.image()
+        case .website: return AssetsProxy.earth_globe.image()
         }
     }
     

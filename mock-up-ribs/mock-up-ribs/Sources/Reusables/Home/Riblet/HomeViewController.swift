@@ -65,28 +65,6 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
         }
     }
     
-    /// 임의의 팔로워 리스트 확인
-    private func addonFollowerButton() {
-        let btn: UIButton = {
-            let b = UIButton()
-            b.setTitle("팔로워", for: .normal)
-            b.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
-            b.setTitleColor(.white, for: .normal)
-            b.backgroundColor = .systemBlue
-            b.addTarget(self, action: #selector(didTapFollowerButton), for: .touchUpInside)
-            b.roundCorners()
-            return b
-        }()
-        
-        view.addSubview(btn)
-        
-        btn.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-            make.height.equalTo(30)
-            make.width.equalTo(60)
-        }
-    }
-    
     private func bind() {
         loginableEmptyView.delegate = self
         
@@ -101,23 +79,24 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
         if let model = model {
             if self.myProfileView != nil { return }
             let myProfile = MyProfileView(myInfo: model)
+            myProfile.eventDelegate = self
             self.myProfileView = myProfile
             view.addSubview(myProfile)
             myProfile.snp.makeConstraints { make in
-                make.edges.equalToSuperview()
+                make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+                make.left.right.equalToSuperview()
+                make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
             }
             self.loginableEmptyView.isHidden = true
             self.myProfileView?.isHidden = false
+            title = "내 정보"
         } else {
             if self.myProfileView == nil { return }
             self.myProfileView?.removeFromSuperview()
             self.myProfileView = nil
             self.loginableEmptyView.isHidden = false
+            title = ""
         }
-    }
-    
-    @objc private func didTapFollowerButton(_ sender: UIButton) {
-        listener?.didTapFollowers()
     }
 }
 
@@ -127,5 +106,13 @@ extension HomeViewController: LoginableEmptyViewDelegate {
     
     func didTapLogin() {
         listener?.didTapLogin()
+    }
+}
+
+//MARK: - 프로필 델리게이트
+extension HomeViewController: MyProfileViewDelegate {
+    
+    func didTapFollowers() {
+        listener?.didTapFollowers()
     }
 }

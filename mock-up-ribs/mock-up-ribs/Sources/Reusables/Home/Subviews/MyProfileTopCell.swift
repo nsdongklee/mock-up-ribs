@@ -7,12 +7,7 @@
 
 import UIKit
 
-protocol MyProfileTopCellDelegate: AnyObject {
-}
-
 class MyProfileTopCell: UIStackView {
-    
-    public weak var delegate: MyProfileTopCellDelegate?
 
     private let iconContainerView: UIView = {
         let v = UIView()
@@ -26,18 +21,6 @@ class MyProfileTopCell: UIStackView {
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
-    
-//    private let verticalStackView: UIStackView = {
-//        let s = UIStackView()
-//        s.axis = .vertical
-//        s.alignment = .fill
-//        s.distribution = .fill
-//        s.spacing = 0
-//        s.backgroundColor = .white
-//        s.layoutMargins = .init(top: 8, left: 0, bottom: 8, right: 0)
-//        s.isLayoutMarginsRelativeArrangement = true
-//        return s
-//    }()
     
     private lazy var nameLabel: UILabel = {
         let lbl = UILabel()

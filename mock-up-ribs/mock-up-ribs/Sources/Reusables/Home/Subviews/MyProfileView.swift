@@ -7,7 +7,13 @@
 
 import UIKit
 
-class MyProfileView: UIScrollView {
+protocol MyProfileViewDelegate: AnyObject {
+    func didTapFollowers()
+}
+
+class MyProfileView: UIScrollView, MyProfileLatestStateCellDelegate {
+    
+    public weak var eventDelegate: MyProfileViewDelegate?
     
     private let container: UIStackView = {
        let s = UIStackView()
@@ -34,6 +40,8 @@ class MyProfileView: UIScrollView {
     }
     
     private func setupSubviews() {
+        showsVerticalScrollIndicator = false
+        
         addSubview(container)
         
         let topCell = MyProfileTopCell(
@@ -43,6 +51,9 @@ class MyProfileView: UIScrollView {
             email: myInfo?.email
         )
         
+        let stateCell = MyProfileLatestStateCell()
+        stateCell.delegate = self
+        
         let subCell = UserDetailCell(
             addr: myInfo?.address,
             company: myInfo?.company,
@@ -51,9 +62,14 @@ class MyProfileView: UIScrollView {
         )
         
         container.addArrangedSubview(topCell)
+        container.addArrangedSubview(stateCell)
         container.addArrangedSubview(subCell)
         
         setupLayouts()
+        
+        stateCell.snp.makeConstraints { make in
+            make.height.greaterThanOrEqualTo(48)
+        }
     }
     
     private func setupLayouts() {
@@ -63,5 +79,11 @@ class MyProfileView: UIScrollView {
             make.width.equalToSuperview()
             make.bottom.equalTo(self.contentLayoutGuide.snp.bottom)
         }
+    }
+    
+    //MARK: 델리게이트 메소드
+    
+    func didTapFollowers() {
+        eventDelegate?.didTapFollowers()
     }
 }

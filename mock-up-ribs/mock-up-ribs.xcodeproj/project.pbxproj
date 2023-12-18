@@ -99,6 +99,8 @@
 		BC6E26662B2AC9A400EBA35F /* MockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E26642B2AC9A400EBA35F /* MockTextField.swift */; };
 		BCDC4CB72B2FDA9900D84CD1 /* MyProfileTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */; };
 		BCDC4CB82B2FDA9900D84CD1 /* MyProfileTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */; };
+		BCDC4CBA2B2FE62900D84CD1 /* MyProfileLatestStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC4CB92B2FE62900D84CD1 /* MyProfileLatestStateCell.swift */; };
+		BCDC4CBB2B2FE62900D84CD1 /* MyProfileLatestStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC4CB92B2FE62900D84CD1 /* MyProfileLatestStateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +153,7 @@
 		BC6E26612B2AC88900EBA35F /* LoginableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginableView.swift; sourceTree = "<group>"; };
 		BC6E26642B2AC9A400EBA35F /* MockTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTextField.swift; sourceTree = "<group>"; };
 		BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTopCell.swift; sourceTree = "<group>"; };
+		BCDC4CB92B2FE62900D84CD1 /* MyProfileLatestStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileLatestStateCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +302,7 @@
 				BC6E264A2B2AC05600EBA35F /* LoginableEmptyView.swift */,
 				BC6E26592B2AC71600EBA35F /* MyProfileView.swift */,
 				BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */,
+				BCDC4CB92B2FE62900D84CD1 /* MyProfileLatestStateCell.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -561,6 +565,7 @@
 				BC6E265F2B2AC7DF00EBA35F /* LoginViewModel.swift in Sources */,
 				BC3EFCE22B283DEF0027510A /* UserAPI.swift in Sources */,
 				BC44B1412B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */,
+				BCDC4CBA2B2FE62900D84CD1 /* MyProfileLatestStateCell.swift in Sources */,
 				BC44B14D2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */,
 				BC3EFCD72B2832870027510A /* HomeInteractor.swift in Sources */,
 				BC44B15E2B296BD900A87EF1 /* AssetsProxy.swift in Sources */,
@@ -610,6 +615,7 @@
 				BC6E26602B2AC7DF00EBA35F /* LoginViewModel.swift in Sources */,
 				BC3EFCE32B283DEF0027510A /* UserAPI.swift in Sources */,
 				BC44B1422B294FB500A87EF1 /* FollowerListBuilder.swift in Sources */,
+				BCDC4CBB2B2FE62900D84CD1 /* MyProfileLatestStateCell.swift in Sources */,
 				BC44B14E2B294FC300A87EF1 /* FollowerDetailBuilder.swift in Sources */,
 				BC3EFCD82B2832870027510A /* HomeInteractor.swift in Sources */,
 				BC44B15F2B296BD900A87EF1 /* AssetsProxy.swift in Sources */,
