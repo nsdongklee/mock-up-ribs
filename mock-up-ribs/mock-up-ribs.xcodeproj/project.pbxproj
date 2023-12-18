@@ -97,6 +97,8 @@
 		BC6E26632B2AC88900EBA35F /* LoginableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E26612B2AC88900EBA35F /* LoginableView.swift */; };
 		BC6E26652B2AC9A400EBA35F /* MockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E26642B2AC9A400EBA35F /* MockTextField.swift */; };
 		BC6E26662B2AC9A400EBA35F /* MockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E26642B2AC9A400EBA35F /* MockTextField.swift */; };
+		BCDC4CB72B2FDA9900D84CD1 /* MyProfileTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */; };
+		BCDC4CB82B2FDA9900D84CD1 /* MyProfileTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +150,7 @@
 		BC6E265E2B2AC7DF00EBA35F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BC6E26612B2AC88900EBA35F /* LoginableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginableView.swift; sourceTree = "<group>"; };
 		BC6E26642B2AC9A400EBA35F /* MockTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTextField.swift; sourceTree = "<group>"; };
+		BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTopCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +298,7 @@
 			children = (
 				BC6E264A2B2AC05600EBA35F /* LoginableEmptyView.swift */,
 				BC6E26592B2AC71600EBA35F /* MyProfileView.swift */,
+				BCDC4CB62B2FDA9900D84CD1 /* MyProfileTopCell.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -580,6 +584,7 @@
 				BC6E26572B2AC2F800EBA35F /* LoginInteractor.swift in Sources */,
 				BC3EFCE92B283E500027510A /* NetworkManager.swift in Sources */,
 				BC44B13F2B294FB500A87EF1 /* FollowerListViewController.swift in Sources */,
+				BCDC4CB72B2FDA9900D84CD1 /* MyProfileTopCell.swift in Sources */,
 				BC3EFCD12B2832870027510A /* HomeRouter.swift in Sources */,
 				BC3EFCC72B282DE30027510A /* RootBuilder.swift in Sources */,
 				BC6E26552B2AC2F800EBA35F /* LoginBuilder.swift in Sources */,
@@ -628,6 +633,7 @@
 				BC6E26582B2AC2F800EBA35F /* LoginInteractor.swift in Sources */,
 				BC3EFCEA2B283E500027510A /* NetworkManager.swift in Sources */,
 				BC44B1402B294FB500A87EF1 /* FollowerListViewController.swift in Sources */,
+				BCDC4CB82B2FDA9900D84CD1 /* MyProfileTopCell.swift in Sources */,
 				BC3EFCD22B2832870027510A /* HomeRouter.swift in Sources */,
 				BC3EFCC82B282DE30027510A /* RootBuilder.swift in Sources */,
 				BC6E26562B2AC2F800EBA35F /* LoginBuilder.swift in Sources */,

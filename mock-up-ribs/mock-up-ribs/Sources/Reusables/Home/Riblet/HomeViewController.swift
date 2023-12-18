@@ -19,6 +19,10 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
 
     private let loginableEmptyView = LoginableEmptyView()
     
+    private var myProfileView: MyProfileView? = nil
+    
+    private let disposeBag = DisposeBag()
+    
     weak var listener: HomePresentableListener?
     
     init() {
@@ -34,13 +38,7 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
     private func setupViews() {
         view.backgroundColor = .systemGray6
         setupBarItems()
-        
-        view.addSubview(loginableEmptyView)
-        
-        loginableEmptyView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-        
+        addonEmptyView()
         bind()
     }
     
@@ -57,6 +55,14 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
                 withConfiguration: UIImage.SymbolConfiguration(pointSize: 18, weight: .regular)
             )?.withTintColor(.systemBlue, renderingMode: .alwaysOriginal)
         )
+    }
+    
+    private func addonEmptyView() {
+        view.addSubview(loginableEmptyView)
+        
+        loginableEmptyView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
     
     /// 임의의 팔로워 리스트 확인
@@ -83,6 +89,31 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
     
     private func bind() {
         loginableEmptyView.delegate = self
+        
+        LoginGlobalRepository.shared.subscribableUserInfo
+            .bind { [weak self] myInfo in
+                self?.configureLoggedIn(with: myInfo)
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    private func configureLoggedIn(with model: UserModel?) {
+        if let model = model {
+            if self.myProfileView != nil { return }
+            let myProfile = MyProfileView(myInfo: model)
+            self.myProfileView = myProfile
+            view.addSubview(myProfile)
+            myProfile.snp.makeConstraints { make in
+                make.edges.equalToSuperview()
+            }
+            self.loginableEmptyView.isHidden = true
+            self.myProfileView?.isHidden = false
+        } else {
+            if self.myProfileView == nil { return }
+            self.myProfileView?.removeFromSuperview()
+            self.myProfileView = nil
+            self.loginableEmptyView.isHidden = false
+        }
     }
     
     @objc private func didTapFollowerButton(_ sender: UIButton) {
