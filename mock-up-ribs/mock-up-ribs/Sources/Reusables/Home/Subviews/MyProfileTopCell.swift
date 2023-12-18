@@ -14,6 +14,11 @@ class MyProfileTopCell: UIStackView {
     
     public weak var delegate: MyProfileTopCellDelegate?
 
+    private let iconContainerView: UIView = {
+        let v = UIView()
+        return v
+    }()
+    
     private let iconImageView: UIImageView = {
         let iv = UIImageView(image: AssetsProxy.unknown_user.image())
         iv.contentMode = .scaleAspectFit
@@ -38,10 +43,8 @@ class MyProfileTopCell: UIStackView {
         let lbl = UILabel()
         lbl.text = self.name
         lbl.textColor = .black
-        lbl.textAlignment = .left
-        lbl.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-        lbl.numberOfLines = 0
-        lbl.lineBreakMode = .byCharWrapping
+        lbl.textAlignment = .center
+        lbl.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         return lbl
     }()
     
@@ -49,8 +52,8 @@ class MyProfileTopCell: UIStackView {
         let lbl = UILabel()
         lbl.text = self.userName
         lbl.textColor = .lightGray
-        lbl.textAlignment = .left
-        lbl.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        lbl.textAlignment = .center
+        lbl.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         return lbl
     }()
     
@@ -58,8 +61,8 @@ class MyProfileTopCell: UIStackView {
         let lbl = UILabel()
         lbl.text = self.email
         lbl.textColor = .darkGray
-        lbl.textAlignment = .left
-        lbl.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        lbl.textAlignment = .center
+        lbl.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return lbl
     }()
     
@@ -87,19 +90,28 @@ class MyProfileTopCell: UIStackView {
         axis = .vertical
         alignment = .fill
         distribution = .fill
-        spacing = 18
+        spacing = 0
         backgroundColor = .white
-        layoutMargins = .init(top: 6, left: 12, bottom: 6, right: 12)
+        layoutMargins = .init(top: 24, left: 12, bottom: 24, right: 12)
         isLayoutMarginsRelativeArrangement = true
         roundCorners(16)
         
-        addArrangedSubview(iconImageView)
+        addArrangedSubview(iconContainerView)
+        iconContainerView.addSubview(iconImageView)
         addArrangedSubview(nameLabel)
         addArrangedSubview(userNameLabel)
         addArrangedSubview(emailLabel)
         
-        iconImageView.snp.makeConstraints { make in
-            make.width.equalTo(42)
+        iconContainerView.snp.makeConstraints { make in
+            make.height.equalTo(80)
         }
+        
+        iconImageView.snp.makeConstraints { make in
+            make.width.height.equalTo(72)
+            make.center.equalToSuperview()
+        }
+        
+        setCustomSpacing(18, after: iconContainerView)
+        setCustomSpacing(8, after: userNameLabel)
     }
 }

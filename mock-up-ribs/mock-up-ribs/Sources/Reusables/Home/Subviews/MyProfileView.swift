@@ -14,9 +14,9 @@ class MyProfileView: UIScrollView {
         s.axis = .vertical
         s.alignment = .fill
         s.distribution = .fill
-        s.spacing = 0
+        s.spacing = 12
         s.backgroundColor = .systemGray6
-        s.layoutMargins = .init(top: 6, left: 16, bottom: 16, right: 16)
+        s.layoutMargins = .init(top: 32, left: 16, bottom: 16, right: 16)
         s.isLayoutMarginsRelativeArrangement = true
         return s
     }()
@@ -43,7 +43,15 @@ class MyProfileView: UIScrollView {
             email: myInfo?.email
         )
         
+        let subCell = UserDetailCell(
+            addr: myInfo?.address,
+            company: myInfo?.company,
+            phone: myInfo?.phone,
+            website: myInfo?.website
+        )
+        
         container.addArrangedSubview(topCell)
+        container.addArrangedSubview(subCell)
         
         setupLayouts()
     }
