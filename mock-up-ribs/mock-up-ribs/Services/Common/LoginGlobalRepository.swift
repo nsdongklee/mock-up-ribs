@@ -35,6 +35,11 @@ public final class LoginGlobalRepository {
         self.subscribableUserInfo.on(.next(model))
     }
     
+    /// 로그아웃
+    public func logout() {
+        self.loggedInUserInfo = nil
+        self.subscribableUserInfo.on(.next(nil))
+    }
     
     //MARK: 로그인 유저의 액션
     

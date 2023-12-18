@@ -13,6 +13,7 @@ import SnapKit
 protocol HomePresentableListener: AnyObject {
     func didTapFollowers()
     func didTapLogin()
+    func didTapLogout()
 }
 
 final class HomeViewController: UIViewController, HomePresentable, HomeViewControllable {
@@ -114,5 +115,9 @@ extension HomeViewController: MyProfileViewDelegate {
     
     func didTapFollowers() {
         listener?.didTapFollowers()
+    }
+    
+    func didTapLogout() {
+        listener?.didTapLogout()
     }
 }

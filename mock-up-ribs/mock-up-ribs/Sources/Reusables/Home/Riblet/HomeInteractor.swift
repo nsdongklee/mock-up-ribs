@@ -24,6 +24,10 @@ protocol HomeListener: AnyObject {
 
 final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteractable, HomePresentableListener {
     
+    func didTapLogout() {
+        LoginGlobalRepository.shared.logout()
+    }
+    
     func loginSuccessfully() {
         router?.detachLogin()
     }

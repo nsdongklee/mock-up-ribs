@@ -9,6 +9,7 @@ import UIKit
 
 protocol MyProfileViewDelegate: AnyObject {
     func didTapFollowers()
+    func didTapLogout()
 }
 
 class MyProfileView: UIScrollView, MyProfileLatestStateCellDelegate {
@@ -25,6 +26,19 @@ class MyProfileView: UIScrollView, MyProfileLatestStateCellDelegate {
         s.layoutMargins = .init(top: 32, left: 16, bottom: 16, right: 16)
         s.isLayoutMarginsRelativeArrangement = true
         return s
+    }()
+    
+    private lazy var logoutableButton: UIButton = {
+        let b = UIButton()
+        b.setTitle("로그아웃", for: .normal)
+        b.contentHorizontalAlignment = .left
+        b.titleEdgeInsets = .init(top: 0, left: 8, bottom: 0, right: 0)
+        b.titleLabel?.font = .systemFont(ofSize: 14, weight: .regular)
+        b.setTitleColor(.lightGray, for: .normal)
+        b.backgroundColor = .white
+        b.addTarget(self, action: #selector(didTapLogout), for: .touchUpInside)
+        b.roundCorners(10)
+        return b
     }()
 
     private let myInfo: UserModel?
@@ -64,6 +78,7 @@ class MyProfileView: UIScrollView, MyProfileLatestStateCellDelegate {
         container.addArrangedSubview(topCell)
         container.addArrangedSubview(stateCell)
         container.addArrangedSubview(subCell)
+        container.addArrangedSubview(logoutableButton)
         
         setupLayouts()
         
@@ -79,6 +94,10 @@ class MyProfileView: UIScrollView, MyProfileLatestStateCellDelegate {
             make.width.equalToSuperview()
             make.bottom.equalTo(self.contentLayoutGuide.snp.bottom)
         }
+    }
+    
+    @objc private func didTapLogout() {
+        eventDelegate?.didTapLogout()
     }
     
     //MARK: 델리게이트 메소드
