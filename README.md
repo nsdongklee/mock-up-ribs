@@ -14,10 +14,43 @@
 - 전역데이터 관리 및 입력 검증 RxSwift 도입
 - API 리퀘스트 모듈화(Moya)
 
-## 📱프로젝트의 주요 기능 (Features)
+## 📱 프로젝트의 주요 기능 (Features)
 - 로그인-로그아웃
 - 로그인 입력 검증
 - 최근 방문 유저 저장
+
+## 🗄️ 프로젝트 구조
+```mermaid
+graph TD;
+
+Root
+
+subgraph TabBar
+
+Home
+
+end
+
+subgraph Login
+
+LoginPage
+
+end
+
+subgraph Follower
+
+FollowerList
+
+FollowerDetail
+
+end
+
+Root --> TabBar
+
+Home --> Login
+
+Home --> Follower
+```
 
 ## 📟 API 리퀘스트
 - 도메인 (페이크 API)
