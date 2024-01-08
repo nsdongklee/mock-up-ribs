@@ -1,5 +1,5 @@
 <p style="text-align: center;">
-  <img width="30%" src="https://github.com/nsdongklee/mock-up-ribs/blob/main/resources/scenario.gif"/>
+  <img width="30%" src="https://github.com/nsdongklee/mock-up-ribs/blob/main/resources/scenario.gif" class="center"/>
 </p>
 
 # mock-up-ribs
